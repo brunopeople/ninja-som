@@ -1,16 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import reducer from "./reducers";
+import dataJson from "./data.json";
 
-const initialState = {
-  firstName: "Chuck",
-  lastName: "Norris",
-  jokeCategory: 0,
-  JokesSaved: {
-    jokesLiked: {},
-    jokesUser: {},
-  },
-};
+const initialState = { dataJson };
 
 export const AppContext = React.createContext();
 
