@@ -1,21 +1,15 @@
 // ANCHOR Imports
 import PropTypes from "prop-types";
-// import {  } from "./styled";
 
 // ANCHOR Component
-export default function Component(props) {
-  const { examepleProps } = props;
+export default function Cart() {
+  // const { examepleProps } = props;
 
   // Component
-  return (
-    <>
-      <h1>Component</h1>
-      <h1>{examepleProps.id}</h1>
-    </>
-  );
+  return <></>;
 }
 
-Component.propTypes = {
+Cart.propTypes = {
   examepleProps: PropTypes.shape({
     id: PropTypes.number,
     examepleProps: PropTypes.string,
@@ -23,6 +17,6 @@ Component.propTypes = {
   }),
 };
 
-Component.defaultProps = {
+Cart.defaultProps = {
   examepleProps: {},
 };
