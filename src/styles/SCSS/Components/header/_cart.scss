@@ -1,0 +1,28 @@
+// ======================================== [IMPORTS]
+@import '../../colors';
+@import '../../isFlex';
+@import '../../isGrid';
+@import '../../transition';
+@import '../../shadow';
+
+.cart {
+  @include is-flex-column(center, center);
+  width: max-content;
+  padding: 24pt 8pt;
+  color: #fff;
+  top: -24px;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  background-color: $primaryColor;
+
+  p {
+    margin: 5px 0;
+    font-size: 14px;
+    margin-top: 4pt;
+
+    &:first-of-type{
+      font-size: 10px;
+    }
+  }
+}

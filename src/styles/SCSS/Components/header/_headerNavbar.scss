@@ -1,0 +1,12 @@
+// ======================================== [IMPORTS]
+@import '../../colors';
+@import '../../isFlex';
+@import '../../isGrid';
+@import '../../transition';
+@import '../../shadow';
+
+.headerNavbar {
+  .navLinkContainer {
+    border-top: 1.5px solid hsla(0, 0%, 44%, 0.5);
+  } 
+}

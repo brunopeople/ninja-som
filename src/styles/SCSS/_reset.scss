@@ -29,6 +29,8 @@ body {
   margin: 0;
   @include scroll-1();
   font-family: 'Lato', sans-serif;
+  color: $textColor;
+  font-size: 14px;
 }
 
 /**
@@ -220,6 +222,7 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  cursor: pointer;
 }
 
 /**

@@ -1,0 +1,55 @@
+// ======================================== [IMPORTS]
+@import '../../colors';
+@import '../../isFlex';
+@import '../../isGrid';
+@import '../../transition';
+@import '../../shadow';
+
+
+.navLink {
+  .container {
+    margin: 0 auto;
+  }
+
+  .componentNav {
+    @include is-flex(center, space-between);
+    padding-right: 138.83px;
+
+    a {
+      text-decoration: none;
+      color: $primaryColor;
+      font-weight: bold;
+    }
+
+    button {
+      @include is-flex(center, center);
+      border: none;
+      background: none;
+
+      svg {
+        margin-left: 8pt;
+      }
+
+      span {
+        color: $primaryColor;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.itemNav {
+  position: relative;
+  padding: 16pt 0;
+  transition: .1s ease;
+  
+  &:hover::after {
+    content: '';
+    border-bottom: 4px solid $primaryColor;
+    position: absolute;
+    bottom: 4pt;
+    width: 100%;
+    display: block;
+  }
+
+}

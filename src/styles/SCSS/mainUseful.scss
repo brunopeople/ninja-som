@@ -8,9 +8,15 @@
 @import './Spacing/Margin';
 @import './Spacing/Padding';
 @import './Components/scroll';
-@import './Components/infoHeader';
-@import './Components/buttons';
 @import './Components/container';
+@import './Components/buttons';
+
+// Header and Navbar
+@import './Components/header/cart';
+@import './Components/header/headerNavbar';
+@import './Components/header/infoHeader';
+@import './Components/header/navbar';
+@import './Components/header/navLink';
 
 // ======================================== [MY PROJECT]
 @import './project'

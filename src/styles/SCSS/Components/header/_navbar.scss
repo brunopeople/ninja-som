@@ -1,0 +1,74 @@
+// ======================================== [IMPORTS]
+@import '../../colors';
+@import '../../isFlex';
+@import '../../isGrid';
+@import '../../transition';
+@import '../../shadow';
+
+
+.navbar {
+  padding:24px 0;
+
+  .container{
+    margin: 0 auto;
+  }
+
+  .componentNav {
+    position: relative;
+    
+    .componentInside{
+      margin-right: 94.36px;
+      @include is-flex(center, space-between);
+
+    }
+
+    .containerSearch {
+      @include is-flex(center, center);
+      padding: 8px 0;
+      border-radius: 5px;
+      border: 1px solid $primaryColor;
+      input{
+        padding: 0 8pt;
+        border: none;
+        font-size: 24px;
+        &:focus {
+          outline: none;
+        }
+        
+      }
+      ::-webkit-input-placeholder {
+        font-size: 12px;
+        color: $primaryColor;
+        line-height: normal;
+        vertical-align: middle;
+        transform:translate3d(0, -4px, 0)
+      }
+      button{
+        border: none;
+        background: none;
+      }
+    }
+    .containerContact {
+      @include is-flex(center, flex-start);
+      color: $primaryColor;
+      font-weight: bold;
+      svg{
+        margin-right: 8pt
+      }
+    }
+    .containerUser {
+      @include is-flex(center, flex-start);
+      color: $primaryColor;
+      p{
+        margin: 0;
+        font-weight: bold;
+      }
+      svg{
+        margin-right: 8pt;
+        &:last-of-type {
+          margin-left: 8pt;
+        }
+      }
+    }
+  }
+}
