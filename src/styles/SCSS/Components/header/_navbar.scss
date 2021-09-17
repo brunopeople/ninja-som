@@ -5,9 +5,8 @@
 @import '../../transition';
 @import '../../shadow';
 
-
 .navbar {
-  padding:24px 0;
+  padding:32px 0;
 
   .container{
     margin: 0 auto;
@@ -15,7 +14,7 @@
 
   .componentNav {
     position: relative;
-    
+
     .componentInside{
       margin-right: 94.36px;
       @include is-flex(center, space-between);
@@ -34,7 +33,7 @@
         &:focus {
           outline: none;
         }
-        
+
       }
       ::-webkit-input-placeholder {
         font-size: 12px;

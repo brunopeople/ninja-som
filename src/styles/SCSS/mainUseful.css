@@ -1003,7 +1003,7 @@ template {
   width: max-content;
   padding: 24pt 8pt;
   color: #fff;
-  top: -24px;
+  top: -32px;
   position: absolute;
   right: 0;
   z-index: 0;
@@ -1016,6 +1016,7 @@ template {
 }
 .cart p:first-of-type {
   font-size: 10px;
+  margin-top: 10px;
 }
 
 .is-flex {
@@ -1283,7 +1284,7 @@ template {
 }
 
 .navbar {
-  padding: 24px 0;
+  padding: 32px 0;
 }
 .navbar .container {
   margin: 0 auto;
