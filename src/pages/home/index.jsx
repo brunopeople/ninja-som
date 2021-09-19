@@ -1,6 +1,7 @@
 // ANCHOR Imports
 // import { useContext } from "react";
 // import { AppContext } from "../../store";
+import Hero from "../../components/Hero";
 
 // ANCHOR Page
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
 
   return (
     <>
-      <h1>Home</h1>
+      <Hero />
     </>
   );
 }

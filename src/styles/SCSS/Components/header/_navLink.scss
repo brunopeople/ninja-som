@@ -13,7 +13,10 @@
 
   .componentNav {
     @include is-flex(center, space-between);
-    padding-right: 138.83px;
+
+    #contato {
+      padding-right: 138.83px;
+    }
 
     a {
       text-decoration: none;
@@ -42,12 +45,12 @@
   position: relative;
   padding: 16pt 0;
   transition: .1s ease;
-  
+
   &:hover::after {
     content: '';
     border-bottom: 4px solid $primaryColor;
     position: absolute;
-    bottom: 4pt;
+    bottom: 0;
     width: 100%;
     display: block;
   }

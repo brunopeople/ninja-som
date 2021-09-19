@@ -1,0 +1,12 @@
+// ======================================== [IMPORTS]
+@import '../../colors';
+@import '../../isFlex';
+@import '../../isGrid';
+@import '../../transition';
+@import '../../shadow';
+
+.hero{
+  height: calc(100vh - 206.66px);
+  max-height: 900px;
+  // @include is-flex(center, center);
+}

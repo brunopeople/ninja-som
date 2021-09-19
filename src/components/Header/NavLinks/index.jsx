@@ -51,9 +51,11 @@ export default function NavLink() {
           PROMOÇÕES
         </Link>
 
-        <Link className="itemNav" to="/contato">
-          CONTATO
-        </Link>
+        <div id="contato">
+          <Link className="itemNav" to="/contato">
+            CONTATO
+          </Link>
+        </div>
       </div>
     </nav>
   );

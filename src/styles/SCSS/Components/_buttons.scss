@@ -6,11 +6,10 @@
 // ======================================== [BUTTONS]
 .btn {
     height: 47px;
-    padding: 0 1.7em;
     cursor: pointer;
     font-size: 14px;
     border: none;
-    border-radius: 7px; 
+    border-radius: 7px;
     transition: $transition-1;
     background-color: hsl(0, 0%, 100%);
     box-shadow: $shadow-1;

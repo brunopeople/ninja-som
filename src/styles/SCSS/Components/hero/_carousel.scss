@@ -1,0 +1,208 @@
+// ======================================== [IMPORTS]
+@import '../../colors';
+@import '../../isFlex';
+@import '../../isGrid';
+@import '../../transition';
+@import '../../shadow';
+
+
+.carousel {
+
+  .slideshowContainer {
+    position: relative;
+
+    .slidesContainer {
+      width: 100%;
+
+      .mySlides {
+        height: 100%;
+        display: none;
+        position: relative;
+
+        .container {
+          padding: 0;
+          margin: 0 auto;
+          width: 100%;
+        }
+
+        .containerInfo {
+          width: max-content;
+          padding: 8pt 16pt;
+
+          position: absolute;
+          text-align: center;
+          z-index: 99;
+          top: 50%;
+          transform: translateY(-50%);
+
+          color: #fff;
+          letter-spacing: 5px;
+          .carouselButton{
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: none;
+            position: relative;
+            transition: ease .2s;
+            padding: 16px 64px;
+            border: 1.5px solid rgba(255, 255, 255, 0);
+            &:hover{
+              border: 1.5px solid #fff;
+            }
+            &::after{
+              content: "";
+              width: 50%;
+
+              position: absolute;
+              margin: auto;
+              top: 0;
+              bottom: -1px;
+              left: 0;
+              right: 0;
+
+              border-bottom: .5px solid #fff;
+            }
+          }
+
+          h2{
+            font-weight: 300;
+            font-size: 16pt;
+          }
+          h1 {
+            letter-spacing: 8px;
+            font-weight: 300;
+            margin-top: 0;
+            font-size: 32pt;
+            strong{
+              font-weight: 900;
+            }
+          }
+        }
+
+        .containerImage {
+          height: 100%;
+          position: relative;
+
+
+
+          .middleImg {
+            object-position: center;
+          }
+          img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            object-position: top;
+          }
+        }
+      }
+    }
+
+    .containerArrows {
+      margin: 0 auto;
+      height: 100%;
+      top: 0;
+      position: absolute;
+      width: 100%;
+      @include is-flex(center, space-between);
+
+      .containerLg {
+        padding: 0;
+        margin: 0 auto;
+        @include is-flex(center, space-between)
+      }
+    }
+
+    .containerDot {
+      margin: 0 auto;
+      bottom: 8pt;
+      position: absolute;
+      width: 100%;
+
+      .container {
+        padding: 0;
+        margin: 0 auto;
+        @include is-flex(center, center)
+      }
+    }
+
+    .arrowsButtons {
+      width: 100%;
+    }
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .next,
+  .prev {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 50px;
+    font-weight: lighter;
+    transition: ease .2s;
+    margin: 0 8pt;
+    border-radius: 10px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: #fff;
+    color: $primaryColor;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 8pt;
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0);
+
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #fff;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+      font-size: 11px
+    }
+  }
+}
