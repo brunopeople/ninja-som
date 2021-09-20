@@ -10,6 +10,9 @@ Um site de compra de produtos musicais desenvolvido com Reat JS.
 <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/AleNoia/ninja-som?color=%2304D361"> <img alt="Repository size" src="https://img.shields.io/github/repo-size/AleNoia/ninja-som"> <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen"> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/AleNoia/ninja-som"></a>
 </p>
 
+![image](https://user-images.githubusercontent.com/82424777/134032392-41c9837a-a5dc-47d8-bb70-742525e94e4a.png)
+
+
 
 # 📌 Índice
 * 💡 [Funcionalidades](#features)
