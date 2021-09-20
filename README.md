@@ -49,7 +49,7 @@ npm start
 
 ```
 
-###💣 Executando teste
+### 💣 Executando teste
 ```
 
 npm test
