@@ -4,7 +4,6 @@
 @import './shadow';
 @import './transition';
 @import './isFlex';
-@import './isGrid';
 @import './Spacing/Margin';
 @import './Spacing/Padding';
 @import './Components/scroll';
@@ -25,11 +24,11 @@
 // Carousel
 @import './Components/instruments';
 
-// Carousel
+// News
 @import './Components/news';
 
-// ======================================== [MY PROJECT]
-@import './project'
+// InstrumentsMain
+@import './Components/instrumentsMain';
 
 // ======================================== [GITHUB]
 //   Made by Igor Noia Silva ✌

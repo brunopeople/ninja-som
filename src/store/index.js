@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import reducer from "./reducers";
-import dataJson from "./data.json";
+import dataJSON from "./data.json";
 
 const initialState = {
   cart: 0,
-  data: dataJson,
+  data: dataJSON,
 };
 
 export const AppContext = React.createContext();

@@ -2035,4 +2035,89 @@ template {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.is-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.is-flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+[class*=grid-] {
+  float: left;
+  margin-bottom: 20px;
+  padding: 0 1%;
+}
+
+.grid-1 {
+  width: 8.3333333333%;
+}
+
+.grid-2 {
+  width: 16.6666666667%;
+}
+
+.grid-3 {
+  width: 25%;
+}
+
+.grid-4 {
+  width: 33.3333333333%;
+}
+
+.grid-5 {
+  width: 41.6666666667%;
+}
+
+.grid-6 {
+  width: 50%;
+}
+
+.grid-7 {
+  width: 58.3333333333%;
+}
+
+.grid-8 {
+  width: 66.6666666667%;
+}
+
+.grid-9 {
+  width: 75%;
+}
+
+.grid-10 {
+  width: 83.3333333333%;
+}
+
+.grid-11 {
+  width: 91.6666666667%;
+}
+
+.grid-12 {
+  width: 100%;
+}
+
+.InstrumentsMain {
+  margin-top: 64pt;
+  margin-bottom: 40pt;
+}
+.InstrumentsMain .intro {
+  text-align: center;
+}
+.InstrumentsMain .intro p {
+  font-size: 16px;
+}
+.InstrumentsMain .intro strong {
+  font-weight: 900;
+}
+.InstrumentsMain .intro h2 {
+  color: #041E50;
+  font-weight: 400;
 }/*# sourceMappingURL=mainUseful.css.map */
