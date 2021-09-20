@@ -7,8 +7,54 @@
 
 // ======================================== [CARD]
 .modalProduct {
-  display: none;
-}
-.show{
-  display: block;
+  position: absolute;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .1);
+  @include is-flex(center,center);
+
+  .cardModal{
+    padding: 8pt 16pt 32pt 8pt;
+    min-width: max-content;
+    width: 60vw;
+    background-color: #fff;
+    border-radius: 13px;
+    
+    .header {
+      @include is-flex(center, flex-end);
+    }
+
+    .content{
+      @include is-flex(center, center);
+      flex-wrap: nowrap;
+      .containerImageModal {
+        width: 50%;
+        margin-right: 32pt;
+        img {
+          width: 100%;
+        }
+      }
+      .infoModal{
+        text-align: start;
+        h2{
+          margin-top:0;
+          font-weight: 400;
+        }
+        .footer{
+          display: flex;
+          flex-direction: column;
+        }
+        .addCartButton{
+          margin-top: 16pt;
+          padding: 8pt 16pt;
+          background-color: $primaryColor;
+          width: max-content;
+        }
+      }
+    }
+  }
 }

@@ -1644,9 +1644,64 @@ template {
 }
 
 .modalProduct {
-  display: none;
+  position: absolute;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
-.show {
-  display: block;
+.modalProduct .cardModal {
+  padding: 8pt 16pt 32pt 8pt;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  width: 60vw;
+  background-color: #fff;
+  border-radius: 13px;
+}
+.modalProduct .cardModal .header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.modalProduct .cardModal .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+.modalProduct .cardModal .content .containerImageModal {
+  width: 50%;
+  margin-right: 32pt;
+}
+.modalProduct .cardModal .content .containerImageModal img {
+  width: 100%;
+}
+.modalProduct .cardModal .content .infoModal {
+  text-align: start;
+}
+.modalProduct .cardModal .content .infoModal h2 {
+  margin-top: 0;
+  font-weight: 400;
+}
+.modalProduct .cardModal .content .infoModal .footer {
+  display: flex;
+  flex-direction: column;
+}
+.modalProduct .cardModal .content .infoModal .addCartButton {
+  margin-top: 16pt;
+  padding: 8pt 16pt;
+  background-color: #041E50;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }/*# sourceMappingURL=mainUseful.css.map */

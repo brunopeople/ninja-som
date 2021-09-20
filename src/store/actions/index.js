@@ -1,4 +1,4 @@
 import { changeName } from "./name";
-import { changeSwitch } from "./categories";
+import { showModalAction, closeModalAction } from "./modal";
 
-export { changeName, changeSwitch };
+export { changeName, showModalAction, closeModalAction };

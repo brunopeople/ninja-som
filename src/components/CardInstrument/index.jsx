@@ -1,13 +1,15 @@
 // ANCHOR Imports
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import PropTypes from "prop-types";
-// import ModalProduct from "../ModalProduct";
+import { showModalAction } from "../../store/actions";
+import { AppContext } from "../../store";
+import ModalProduct from "../ModalProduct";
 
 // ANCHOR Component
 export default function CardProduct(props) {
   const { product } = props;
+  const { dispatch } = useContext(AppContext);
   const [price, setPrice] = useState(0);
-  // const [modal, setModal] = useState();
 
   // Formatando preço
   function formatPrice(priceValue) {
@@ -21,30 +23,20 @@ export default function CardProduct(props) {
   // Tornando o modal do componente visível
   function showModal(e) {
     e.preventDefault();
-    // console.log(modal, product.photo);
-    // modal.classList.add("show");
+    showModalAction(dispatch, product);
   }
 
   useEffect(() => {
     formatPrice(product.price);
   }, [product, price]);
 
-  useEffect(() => {
-    const modalValue = document.getElementById(product.photo);
-    // setModal(modalValue);
-    console.log(modalValue);
-  }, []);
-
-  console.log(product);
+  // console.log(product);
 
   // Component
   return (
     <div className="cardProduct">
       <div
         className="containerImage"
-        onKeyDown={(e) => {
-          showModal(e);
-        }}
         aria-hidden="true"
         onClick={(e) => {
           showModal(e);
@@ -97,7 +89,7 @@ export default function CardProduct(props) {
         <h2> {product.productName} </h2> <p> {product.descriptionShort} </p>
         <p className="price"> R$ {price} </p>
       </div>
-      {/* <ModalProduct id={product.photo} product={product} /> */}
+      <ModalProduct />
     </div>
   );
 }
