@@ -1,13 +1,13 @@
 // ANCHOR Imports
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import ModalProduct from "../../ModalProduct";
+// import ModalProduct from "../ModalProduct";
 
 // ANCHOR Component
 export default function CardProduct(props) {
   const { product } = props;
   const [price, setPrice] = useState(0);
-  const [modal, setModal] = useState();
+  // const [modal, setModal] = useState();
 
   // Formatando preço
   function formatPrice(priceValue) {
@@ -21,7 +21,7 @@ export default function CardProduct(props) {
   // Tornando o modal do componente visível
   function showModal(e) {
     e.preventDefault();
-    console.log(modal, product.photo);
+    // console.log(modal, product.photo);
     // modal.classList.add("show");
   }
 
@@ -31,11 +31,11 @@ export default function CardProduct(props) {
 
   useEffect(() => {
     const modalValue = document.getElementById(product.photo);
-    setModal(modalValue);
+    // setModal(modalValue);
     console.log(modalValue);
   }, []);
 
-  // console.log(product);
+  console.log(product);
 
   // Component
   return (
@@ -51,7 +51,7 @@ export default function CardProduct(props) {
         }}
       >
         <img src={product.photo} alt={product.descriptionShort} />
-        <div className="containerQuickView">
+        <button type="button" className="btn buttonQuickView">
           <div className="containerIcon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -91,13 +91,13 @@ export default function CardProduct(props) {
             </svg>
           </div>
           <sub>Quick View</sub>
-        </div>
+        </button>
       </div>
       <div className="infoProduct">
         <h2> {product.productName} </h2> <p> {product.descriptionShort} </p>
         <p className="price"> R$ {price} </p>
       </div>
-      <ModalProduct id={product.photo} product={product} />
+      {/* <ModalProduct id={product.photo} product={product} /> */}
     </div>
   );
 }

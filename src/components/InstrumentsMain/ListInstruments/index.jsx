@@ -1,6 +1,6 @@
 // ANCHOR Imports
 import { useContext, useEffect, useState } from "react";
-import CardInstrument from "../CardInstrument";
+import CardInstrument from "../../CardInstrument";
 import { AppContext } from "../../../store";
 
 // ANCHOR Component

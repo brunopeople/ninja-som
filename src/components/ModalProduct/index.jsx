@@ -1,12 +1,17 @@
 // ANCHOR Imports
-import { useState, useEffect } from "react";
+import {
+  // useState,
+  useEffect,
+  useContext,
+} from "react";
 import PropTypes from "prop-types";
+import { AppContext } from "../../store";
 
 // ANCHOR Component
 export default function ModalProduct(props) {
   const { product } = props;
+  const { state } = useContext(AppContext);
   // const [price, setPrice] = useState(0);
-  const [closeModalProduct, setCloseModalProduct] = useState(false);
 
   // Formatando preço
   // function formatPrice(priceValue) {
@@ -20,15 +25,11 @@ export default function ModalProduct(props) {
   // Fechando o modal do produto
   function closeModal(e) {
     e.preventDefault();
-    setCloseModalProduct(true);
   }
 
   useEffect(() => {
-    console.log(product);
-    if (closeModalProduct) {
-      console.log("fexo");
-    }
-  }, [product, closeModalProduct]);
+    console.log(state);
+  }, [product, state]);
 
   // console.log(product);
 

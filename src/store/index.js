@@ -6,6 +6,10 @@ import dataJSON from "./data.json";
 const initialState = {
   cart: 0,
   data: dataJSON,
+  modal: {
+    show: false,
+    data: [],
+  },
 };
 
 export const AppContext = React.createContext();

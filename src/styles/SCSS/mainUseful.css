@@ -1536,6 +1536,13 @@ template {
   color: #041E50;
   font-weight: 400;
 }
+.InstrumentsMain .containerInstruments {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .is-flex {
   display: flex;
@@ -1575,7 +1582,7 @@ template {
   bottom: 0;
   background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.8) 100%);
 }
-.cardProduct .containerImage .containerQuickView {
+.cardProduct .containerImage .buttonQuickView {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -1584,18 +1591,20 @@ template {
   position: absolute;
   bottom: 0;
   opacity: 0;
+  background-color: rgba(255, 255, 255, 0);
   transition: ease 0.25s;
 }
-.cardProduct .containerImage .containerQuickView sub {
+.cardProduct .containerImage .buttonQuickView sub {
   color: #041E50;
 }
-.cardProduct .containerImage .containerQuickView .containerIcon {
+.cardProduct .containerImage .buttonQuickView .containerIcon {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   padding: 8pt 10pt;
-  background-color: #041E50;
   border-radius: 100%;
+  transition: ease 0.15s;
+  background-color: #041E50;
 }
 .cardProduct img {
   transition: ease 0.15s;
@@ -1611,8 +1620,11 @@ template {
 .cardProduct:hover {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
-.cardProduct:hover .containerQuickView {
+.cardProduct:hover .buttonQuickView {
   opacity: 1;
+}
+.cardProduct:hover .buttonQuickView:hover .containerIcon {
+  background-color: #007AB8;
 }
 .cardProduct:hover .containerImage img {
   transform: translateY(-16px);

@@ -24,4 +24,8 @@
       font-weight: 400;
     }
   }
+  .containerInstruments{
+    width: 100%;
+    @include is-flex(center, space-between)
+  }
 }

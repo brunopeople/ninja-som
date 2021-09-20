@@ -31,7 +31,7 @@
       }
     }
 
-    .containerQuickView {
+    .buttonQuickView {
       width: max-content;
 
       z-index: 99;
@@ -40,6 +40,7 @@
       bottom: 0;
 
       opacity: 0;
+      background-color: rgba(255, 255, 255, 0);
       transition: $secondaryTransition;
 
       sub {
@@ -49,8 +50,10 @@
       .containerIcon {
         width: max-content;
         padding: 8pt 10pt;
-        background-color: $primaryColor;
+
         border-radius: 100%;
+        transition: $primaryTransition;
+        background-color: $primaryColor;
       }
     }
   }
@@ -72,8 +75,13 @@
   &:hover {
     box-shadow: $secondaryShadow;
 
-    .containerQuickView {
+    .buttonQuickView {
       opacity: 1;
+      &:hover{
+        .containerIcon{
+          background-color: $secondaryColor;
+        }
+      }
     }
 
     .containerImage {
