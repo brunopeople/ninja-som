@@ -50,6 +50,7 @@ npm start
 ```
 
 ### 💣 Executando teste
+Vá até a pasta raíz e execute o projeto:
 ```
 
 npm test
