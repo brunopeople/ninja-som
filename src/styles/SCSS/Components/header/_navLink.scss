@@ -7,10 +7,6 @@
 
 
 .navLink {
-  .container {
-    margin: 0 auto;
-  }
-
   .componentNav {
     @include is-flex(center, space-between);
 
@@ -45,6 +41,7 @@
   position: relative;
   padding: 16pt 0;
   transition: .1s ease;
+  font-size: 14px;
 
   &:hover::after {
     content: '';

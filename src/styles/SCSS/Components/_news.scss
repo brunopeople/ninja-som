@@ -1,0 +1,88 @@
+// ======================================== [IMPORTS]
+@import '../colors';
+@import '../isFlex';
+@import '../isGrid';
+@import '../transition';
+@import '../shadow';
+
+.news{
+  width: 100%;
+  margin-top: 32pt;
+  display: flex;
+
+  .containerNews {
+    width: 100%;
+    position: relative;
+    .infoContainer {
+      top: 0;
+      position: absolute;
+      width: max-content;
+      // background-color: red;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+      letter-spacing: 4px;
+      h3{
+        font-weight: 300;
+        font-size: 11pt;
+        position: relative;
+        
+        &::after {
+          content: "";
+          width: 15%;
+
+          position: absolute;
+          margin: auto;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: -10px;
+
+          border-bottom: 2px solid #fff;
+        }
+      }
+      h2{
+        font-weight: 300;
+        font-size: 28pt;
+        margin-top: 16pt;
+      }
+      strong {
+        font-weight: 900;
+      }
+      .newBtn {
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: none;
+        position: relative;
+        transition: ease .2s;
+        padding: 16px 32px;
+        border: 1.5px solid #fff;
+
+        &:hover {
+          background-color: rgb(255, 255, 255);
+          color: $textColor;
+        }
+      }
+    }
+  }
+  
+  .imageContainer{
+    z-index: 99;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+    }
+  }
+  
+  img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+  }
+}

@@ -8,16 +8,15 @@
 .navbar {
   padding:32px 0;
 
-  .container{
-    margin: 0 auto;
-  }
-
   .componentNav {
     position: relative;
 
     .componentInside{
-      margin-right: 94.36px;
       @include is-flex(center, space-between);
+      margin-right: calc(94.36px + 8pt);
+      p{
+        font-size: 14px;
+      }
 
     }
 
@@ -58,6 +57,9 @@
     .containerUser {
       @include is-flex(center, flex-start);
       color: $primaryColor;
+      sub{
+        font-size: 10px;
+      }
       p{
         margin: 0;
         font-weight: bold;

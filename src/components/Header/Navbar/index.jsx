@@ -10,10 +10,12 @@ export default function Navbar() {
         <div className="componentInside">
           <div className="logo">
             <svg
+              id="logoNinhaSom"
               xmlns="http://www.w3.org/2000/svg"
               width="179.058"
               height="28"
               viewBox="0 0 179.058 28"
+              alt="Logo do Ninha Som"
             >
               <g
                 id="Grupo_1504"

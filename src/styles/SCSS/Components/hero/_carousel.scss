@@ -21,7 +21,6 @@
 
         .container {
           padding: 0;
-          margin: 0 auto;
           width: 100%;
         }
 
@@ -119,7 +118,6 @@
 
       .container {
         padding: 0;
-        margin: 0 auto;
         @include is-flex(center, center)
       }
     }

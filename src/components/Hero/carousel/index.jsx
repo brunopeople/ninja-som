@@ -78,9 +78,9 @@ export default function Hero() {
             </div>
             <div className="containerImage">
               <img
-                src="/images/imageBanner.png"
+                src="/images/mulher_com_vioalao_em_show.png"
                 style={{ width: "100%" }}
-                alt="Girl in a jacket"
+                alt="Mulher tocando violão e catando em um show"
               />
             </div>
           </div>
@@ -98,9 +98,9 @@ export default function Hero() {
             </div>
             <div className="containerImage">
               <img
-                src="/images/securityStore.jpg"
+                src="/images/maos_tocando_violao_inteiro.jpg"
                 style={{ width: "100%" }}
-                alt="Girl in a jacket"
+                alt="Pessoa tocando violão"
               />
             </div>
           </div>
@@ -116,9 +116,9 @@ export default function Hero() {
             <div className="containerImage">
               <img
                 className="middleImg"
-                src="/images/returnProduct.jpg"
+                src="/images/headset_fone_de_ouvido.jpg"
                 style={{ width: "100%" }}
-                alt="Girl in a jacket"
+                alt="Headset com tema escuro"
               />
             </div>
           </div>

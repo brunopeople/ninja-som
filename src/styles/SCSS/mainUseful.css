@@ -871,12 +871,14 @@ template {
   width: 100%;
   padding: 0 8pt;
   max-width: 1140px;
+  margin: 0 auto;
 }
 
 .containerLg {
   width: 100%;
   padding: 0 8pt;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .btn {
@@ -1004,6 +1006,7 @@ template {
   position: absolute;
   right: 0;
   z-index: 0;
+  margin-right: 8pt;
   background-color: #041E50;
 }
 .cart p {
@@ -1271,18 +1274,18 @@ template {
 .navbar {
   padding: 32px 0;
 }
-.navbar .container {
-  margin: 0 auto;
-}
 .navbar .componentNav {
   position: relative;
 }
 .navbar .componentNav .componentInside {
-  margin-right: 94.36px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-right: calc(94.36px + 8pt);
+}
+.navbar .componentNav .componentInside p {
+  font-size: 14px;
 }
 .navbar .componentNav .containerSearch {
   display: flex;
@@ -1329,6 +1332,9 @@ template {
   justify-content: flex-start;
   flex-wrap: wrap;
   color: #041E50;
+}
+.navbar .componentNav .containerUser sub {
+  font-size: 10px;
 }
 .navbar .componentNav .containerUser p {
   margin: 0;
@@ -1408,9 +1414,6 @@ template {
   width: 100%;
 }
 
-.navLink .container {
-  margin: 0 auto;
-}
 .navLink .componentNav {
   display: flex;
   align-items: center;
@@ -1445,6 +1448,7 @@ template {
   position: relative;
   padding: 16pt 0;
   transition: 0.1s ease;
+  font-size: 14px;
 }
 .itemNav:hover::after {
   content: "";
@@ -1523,7 +1527,6 @@ template {
 }
 
 .hero {
-  height: calc(100vh - 206.66px);
   max-height: 900px;
 }
 
@@ -1607,7 +1610,6 @@ template {
 }
 .carousel .slideshowContainer .slidesContainer .mySlides .container {
   padding: 0;
-  margin: 0 auto;
   width: 100%;
 }
 .carousel .slideshowContainer .slidesContainer .mySlides .containerInfo {
@@ -1701,7 +1703,6 @@ template {
 }
 .carousel .slideshowContainer .containerDot .container {
   padding: 0;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1773,4 +1774,265 @@ template {
 .carousel .text {
     font-size: 11px;
   }
+}
+
+.is-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.is-flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+[class*=grid-] {
+  float: left;
+  margin-bottom: 20px;
+  padding: 0 1%;
+}
+
+.grid-1 {
+  width: 8.3333333333%;
+}
+
+.grid-2 {
+  width: 16.6666666667%;
+}
+
+.grid-3 {
+  width: 25%;
+}
+
+.grid-4 {
+  width: 33.3333333333%;
+}
+
+.grid-5 {
+  width: 41.6666666667%;
+}
+
+.grid-6 {
+  width: 50%;
+}
+
+.grid-7 {
+  width: 58.3333333333%;
+}
+
+.grid-8 {
+  width: 66.6666666667%;
+}
+
+.grid-9 {
+  width: 75%;
+}
+
+.grid-10 {
+  width: 83.3333333333%;
+}
+
+.grid-11 {
+  width: 91.6666666667%;
+}
+
+.grid-12 {
+  width: 100%;
+}
+
+.instrumentsSection {
+  width: 100%;
+  margin-top: 32pt;
+}
+.instrumentsSection .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.instrumentsSection a {
+  text-decoration: none;
+}
+.instrumentsSection .instrumentCard {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  opacity: 0.5;
+  flex: 1;
+  transition: ease 0.25s;
+}
+.instrumentsSection .instrumentCard .containerImage {
+  position: relative;
+  transition: ease 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+.instrumentsSection .instrumentCard .containerImage:hover::after {
+  content: "";
+  position: absolute;
+  padding: 8pt;
+  width: 106px;
+  height: 106px;
+  border-radius: 100%;
+  border: 2px solid #041E50;
+}
+.instrumentsSection .instrumentCard:hover {
+  opacity: 1;
+}
+.instrumentsSection .instrumentCard h2 {
+  margin-top: 18pt;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #041E50;
+}
+
+.is-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.is-flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+[class*=grid-] {
+  float: left;
+  margin-bottom: 20px;
+  padding: 0 1%;
+}
+
+.grid-1 {
+  width: 8.3333333333%;
+}
+
+.grid-2 {
+  width: 16.6666666667%;
+}
+
+.grid-3 {
+  width: 25%;
+}
+
+.grid-4 {
+  width: 33.3333333333%;
+}
+
+.grid-5 {
+  width: 41.6666666667%;
+}
+
+.grid-6 {
+  width: 50%;
+}
+
+.grid-7 {
+  width: 58.3333333333%;
+}
+
+.grid-8 {
+  width: 66.6666666667%;
+}
+
+.grid-9 {
+  width: 75%;
+}
+
+.grid-10 {
+  width: 83.3333333333%;
+}
+
+.grid-11 {
+  width: 91.6666666667%;
+}
+
+.grid-12 {
+  width: 100%;
+}
+
+.news {
+  width: 100%;
+  margin-top: 32pt;
+  display: flex;
+}
+.news .containerNews {
+  width: 100%;
+  position: relative;
+}
+.news .containerNews .infoContainer {
+  top: 0;
+  position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 4px;
+}
+.news .containerNews .infoContainer h3 {
+  font-weight: 300;
+  font-size: 11pt;
+  position: relative;
+}
+.news .containerNews .infoContainer h3::after {
+  content: "";
+  width: 15%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  border-bottom: 2px solid #fff;
+}
+.news .containerNews .infoContainer h2 {
+  font-weight: 300;
+  font-size: 28pt;
+  margin-top: 16pt;
+}
+.news .containerNews .infoContainer strong {
+  font-weight: 900;
+}
+.news .containerNews .infoContainer .newBtn {
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: none;
+  position: relative;
+  transition: ease 0.2s;
+  padding: 16px 32px;
+  border: 1.5px solid #fff;
+}
+.news .containerNews .infoContainer .newBtn:hover {
+  background-color: white;
+  color: #222222;
+}
+.news .imageContainer {
+  z-index: 99;
+}
+.news .imageContainer:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+.news img {
+  width: 100%;
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }/*# sourceMappingURL=mainUseful.css.map */
