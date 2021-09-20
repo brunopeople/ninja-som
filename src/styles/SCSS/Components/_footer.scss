@@ -8,7 +8,7 @@ footer {
     height: 50vh;
     @include is-flex-column(center, flex-start);
     padding: 3em;
-    box-shadow: $shadow-1;
+    box-shadow: $primaryShadow;
     background-color: white;
 
     span {

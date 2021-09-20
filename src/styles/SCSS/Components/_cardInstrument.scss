@@ -1,0 +1,85 @@
+// ======================================== [IMPORTS]
+@import '../shadow';
+@import '../colors';
+@import '../isFlex';
+@import '../transition';
+@import '../Components/scroll';
+
+// ======================================== [CARD]
+.cardProduct {
+  padding: 8pt;
+  max-width: 216px;
+  border-radius: 8pt;
+  margin-bottom: .8em;
+  text-align: center;
+  transition: $secondaryTransition;
+
+  .containerImage {
+    @include is-flex(center, center);
+    position: relative;
+    transition: $secondaryTransition;
+
+    &:hover{
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.8) 100%);
+      }
+    }
+
+    .containerQuickView {
+      width: max-content;
+
+      z-index: 99;
+      margin: 0 auto;
+      position: absolute;
+      bottom: 0;
+
+      opacity: 0;
+      transition: $secondaryTransition;
+
+      sub {
+        color: $primaryColor;
+      }
+
+      .containerIcon {
+        width: max-content;
+        padding: 8pt 10pt;
+        background-color: $primaryColor;
+        border-radius: 100%;
+      }
+    }
+  }
+
+  img {
+    transition: $primaryTransition;
+  }
+
+  .price {
+    font-size: 19pt;
+    font-weight: 700;
+  }
+
+  h2,
+  .price {
+    color: $primaryColor;
+  }
+
+  &:hover {
+    box-shadow: $secondaryShadow;
+
+    .containerQuickView {
+      opacity: 1;
+    }
+
+    .containerImage {
+      img {
+        transform: translateY(-16px);
+      }
+    }
+  }
+}

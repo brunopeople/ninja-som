@@ -18,7 +18,7 @@ export default function ListInstruments() {
   return (
     <>
       {listProducts.map((product) => (
-        <CardInstrument product={product} />
+        <CardInstrument product={product} key={product.productName} />
       ))}
     </>
   );

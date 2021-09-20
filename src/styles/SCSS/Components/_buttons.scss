@@ -12,7 +12,7 @@
     border-radius: 7px;
     transition: $primaryTransition;
     background-color: hsl(0, 0%, 100%);
-    box-shadow: $shadow-1;
+    box-shadow: $primaryShadow;
     color: #fff;
 
     i {
@@ -45,7 +45,7 @@
 .btn-up {
 
     &:hover {
-        box-shadow: $shadow-1;
+        box-shadow: $primaryShadow;
         transform: scale(1.1);
 
         i {
